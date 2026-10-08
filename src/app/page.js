@@ -7,6 +7,7 @@ export default function Home() {
     <div>
       <Marquee/>
       <Banner/>
+      
       আজকের বাজারের দাম এক নজরে
     </div>
   );
