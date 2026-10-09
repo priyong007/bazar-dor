@@ -56,7 +56,7 @@ const CategoryProducts = async ({ params }) => {
             </div>
             <p className='my-5'>{`মোট ${categoryProducts?.length}টি পণ্য দেখানো হচ্ছে`}</p>
 
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {
                    categoryProducts.map(product => <ProductsCards key={product.id} product={product} ></ProductsCards>) 
                 }
