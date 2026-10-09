@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import React from 'react';
 
 const ProductsCards = ({ product }) => {
@@ -22,6 +23,8 @@ const ProductsCards = ({ product }) => {
 
     return (
         <div className=''>
+            <Link href={`/product/${product?.id}`}>
+            
             <div className="card bg-base-100  shadow-sm  ">
                 <div className=" flex gap-2">
                     <p className="bg-gray-300 rounded-xl px-3 py-2 text-4xl ">{product?.image}</p>
@@ -38,6 +41,9 @@ const ProductsCards = ({ product }) => {
                 </div>
 
             </div>
+            
+            </Link>
+            
         </div>
     );
 };

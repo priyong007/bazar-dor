@@ -7,7 +7,7 @@ const Navlinks = async() => {
   const data = await res.json();
   
     return (
-        <div className='flex gap-5 max-w-7xl  mx-auto'>
+        <div className='flex gap-5 max-w-7xl  mx-auto my-4 py-2'>
             {data.map(menu => <Link key={menu?.id} href={`/category/${menu?.slug}`}><span>{menu?.icon}</span>{menu.nameBn}</Link>)}
         </div>
     );

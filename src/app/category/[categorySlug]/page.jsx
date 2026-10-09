@@ -33,7 +33,7 @@ const CategoryProducts = async ({ params }) => {
             produts of a category
             {/* breadcumbs */}
             <div className='flex gap-2 max-w-7xl mx-auto my-4'>
-                <Link href={'/'}>Home</Link>
+                <Link className='text-blue-600' href={'/'}>হোম</Link>
                 <span className='pt-1'><MdOutlineArrowForwardIos /></span>
                 <p>{currentCategory?.nameBn}</p>
             </div>
