@@ -1,5 +1,6 @@
 
 import ProductsCards from '@/components/ProductsCards';
+import SortedCategoryProducts from '@/components/SortedCategoryProducts';
 import Link from 'next/link';
 import React from 'react';
 import { FaLessThan } from 'react-icons/fa';
@@ -51,16 +52,10 @@ const CategoryProducts = async ({ params }) => {
                 </div>
             </div>
 
-            <div>
-                sorting
+            <div >
+                <SortedCategoryProducts products={categoryProducts}/>
             </div>
-            <p className='my-5'>{`মোট ${categoryProducts?.length}টি পণ্য দেখানো হচ্ছে`}</p>
 
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                {
-                   categoryProducts.map(product => <ProductsCards key={product.id} product={product} ></ProductsCards>) 
-                }
-            </div>
         </div>
     );
 };
