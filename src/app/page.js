@@ -27,7 +27,7 @@ export default async function  Home() {
   
   return (
     <div>
-      <Marquee/>
+      
       <Banner/>
       {/* আজ দাম বেড়েছে */}
       <div className="max-w-7xl mx-auto">
