@@ -16,17 +16,19 @@ const UserInfo = () => {
         <div>
             {
                 user ? <div>
-                    <h2 className='text-2xl font-bold my-2'>আমার প্রোফাইল</h2>
-                    <p>আপনার অ্যাকাউন্টের তথ্য এখানে দেখুন।</p>
-                    <div className='flex gap-6 bg-base-300 p-4  rounded-2xl my-4 '>
+                    
+
+                    <Link href={'/profile'}>
+                    <div className='flex items-center gap-6 bg-base-100 p-2 border-2 border-purple-300  rounded-box my-4 '>
                         <div>
-                            <h2 className=''>Name : {user?.name}</h2>
-                            <h2>Email : {user?.email}</h2>
+                            <h2 className=''> {user?.name}</h2>
                         </div>
                         <div>
-                            <button onClick={handleSignOut} className='btn bg-green-500 px-4 py-4 btn-xs'>Sign Out</button>
+                            <button onClick={handleSignOut} className='btn bg-red-500 text-white px-4 py-4 btn-xs'>Sign Out</button>
                         </div>
                     </div>
+                    
+                    </Link>
                 </div>
 
                     :
