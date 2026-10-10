@@ -7,12 +7,12 @@ import { FaLessThan } from 'react-icons/fa';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 
 const getCategoryProducts = async (categorySlug) => {
-    const res = await fetch(`https://api.api-store.workers.dev/api/bazardor/products?category=${categorySlug}`)
+    const res = await fetch(`https://api.abcz.workers.dev/api/bazardor/products?category=${categorySlug}`)
     const data = await res.json();
     return data
 };
 const getCategories = async () => {
-    const res = await fetch("https://api.api-store.workers.dev/api/bazardor/categories");
+    const res = await fetch("https://api.abcz.workers.dev/api/bazardor/categories");
     const data = await res.json();
     return data;
 }

@@ -4,7 +4,7 @@ import React from 'react';
 
 const getSingleProduct = async (id) => {
     const res = await fetch(
-        `https://api.api-store.workers.dev/api/bazardor/products/${id}`
+        `https://api.abcz.workers.dev/api/bazardor/products/${id}`
     );
 
     if (!res.ok) {

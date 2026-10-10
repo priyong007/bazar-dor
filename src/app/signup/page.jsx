@@ -36,9 +36,15 @@ const SignUpPage = () => {
         const data = await authClient.signIn.social({
     provider: "google",
   });
-  console.log(data)
+  
+};
 
-    }
+    const handleGithubSignUp = async() => {
+        const data = await authClient.signIn.social({
+    provider: "github",
+  });
+  
+}
 
     return (
         <div className='max-w-7xl mx-auto my-4'>
@@ -72,7 +78,7 @@ const SignUpPage = () => {
                                     <FaGoogle /></span>
                                     Google দিয়ে চালিয়ে যান
                             </button>
-                            <button className='flex gap-1 btn '>
+                            <button onClick={handleGithubSignUp} className='flex gap-1 btn '>
                                 <span className='text-black '>
                                     <FaGithub /></span>
                                     Github দিয়ে চালিয়ে যান
