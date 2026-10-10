@@ -72,7 +72,7 @@ export default async function  Home() {
 
       </div>
 
-      আজকের বাজারের দাম এক নজরে
+      
     </div>
   );
 }

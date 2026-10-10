@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import Navlinks from './Navlinks';
+import UserInfo from './UserInfo';
 
 
 const Header = () => {
@@ -23,10 +24,7 @@ const Header = () => {
                         <span className="text-xs text-neutral-500">{date}</span>
                     </div>
 
-                    <div className='flex gap-2'>
-                        <button className='btn rounded-xl border-0 text-sm sm:text-base'>সাইন ইন</button>
-                        <button className='btn bg-[#1A9951] rounded-xl text-white text-sm sm:text-base'>সাইন আপ</button>
-                    </div>
+                <UserInfo/>    
                 </div>
 
             </div>
