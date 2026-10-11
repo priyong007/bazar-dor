@@ -21,7 +21,7 @@ const Header = () => {
                     <div className='flex items-center gap-2'>
                         <Image className='bg-green-400 text-white p-2 rounded-box' width={50} height={50} alt='logo' src={'/logo-icon.png'} />
                         <div>
-                            <p className='text-2xl font-bold'>বাজার দর</p>
+                            <Link href={'/'}><p className='text-2xl font-bold'>বাজার দর</p></Link>
                         <span className=" ">{date}</span>
                         </div>
                     </div>

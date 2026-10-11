@@ -60,7 +60,7 @@ export default async function  Home() {
         <p className="mt-6 text-2xl font-bold">সব পণ্য</p>
         <p className="my-2">মোট <span>{products.length}</span>টি পণ্য দেখানো হচ্ছে</p>
 
-         <div className="">
+         <div id="সব-পণ্য" className="">
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {
                    products.map(product => <ProductsCards key={product.id} product={product} ></ProductsCards>) 
