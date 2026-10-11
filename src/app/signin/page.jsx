@@ -31,6 +31,20 @@ const SignInPage = () => {
             }
         };
 
+        const handleGoogleSignUp = async() => {
+                const data = await authClient.signIn.social({
+            provider: "google",
+          });
+          
+        };
+        
+            const handleGithubSignUp = async() => {
+                const data = await authClient.signIn.social({
+            provider: "github",
+          });
+          
+        }
+
 
     return (
         <div className='max-w-7xl mx-auto my-4'>
@@ -57,12 +71,12 @@ const SignInPage = () => {
                                     <span><TfiLayoutLineSolid /></span>
                                 </div>
                                 <div className='flex gap-2'>
-                                    <button className='flex gap-1 btn '>
+                                    <button onClick={handleGoogleSignUp} className='flex gap-1 btn '>
                                         <span className='text-green-400 '>
                                             <FaGoogle /></span>
                                             Google দিয়ে চালিয়ে যান
                                     </button>
-                                    <button className='flex gap-1 btn '>
+                                    <button onClick={handleGithubSignUp} className='flex gap-1 btn '>
                                         <span className='text-black '>
                                             <FaGithub /></span>
                                             Github দিয়ে চালিয়ে যান
