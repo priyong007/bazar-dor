@@ -71,12 +71,12 @@ const SignInPage = () => {
                                     <span><TfiLayoutLineSolid /></span>
                                 </div>
                                 <div className='flex gap-2'>
-                                    <button onClick={handleGoogleSignUp} className='flex gap-1 btn '>
+                                    <button type='button' onClick={handleGoogleSignUp} className='flex gap-1 btn '>
                                         <span className='text-green-400 '>
                                             <FaGoogle /></span>
                                             Google দিয়ে চালিয়ে যান
                                     </button>
-                                    <button onClick={handleGithubSignUp} className='flex gap-1 btn '>
+                                    <button type='button' onClick={handleGithubSignUp} className='flex gap-1 btn '>
                                         <span className='text-black '>
                                             <FaGithub /></span>
                                             Github দিয়ে চালিয়ে যান
